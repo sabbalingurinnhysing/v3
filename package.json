@@ -5,7 +5,7 @@
     "lint": "run eslint .",
     "dev": "tsx watch src/index.ts",
     "test": "jest --config jest.config.js",
-    "start": "ts-node src/index.js && prisma migrate deploy"
+    "start": "ts-node src/index.js && prisma migrate dev --name init && prisma migrate deploy"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.8",
